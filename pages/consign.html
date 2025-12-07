@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sell or consign your clothes with Thrift Better. Simple 3-step process to turn your wardrobe into cash.">
+  <meta name="keywords" content="sell secondhand clothes, consignment, sell vintage, resell fashion">
+  <title>Sell & Consign | Thrift Better</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../index.html" class="logo">THRIFT BETTER</a>
+        <button class="menu-toggle">☰</button>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="curations.html">Curations</a></li>
+            <li><a href="consign.html">Consign</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Sell Your Clothes With Us</h1>
+        <p class="hero-subtext">Easy consignment. Fair prices. Your wardrobe deserves a second life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our 3-Step Process</h2>
+        <p>Turn your clothes into cash in just three simple steps.</p>
+      </div>
+
+      <div style="max-width: 1000px; margin: 0 auto; display: grid; gap: var(--spacing-2xl);">
+        <div class="card fade-in" style="display: grid; grid-template-columns: 1fr auto; gap: var(--spacing-lg); align-items: center;">
+          <div>
+            <h3 style="color: var(--accent-moss); margin-bottom: var(--spacing-md);">Step 1: Submit Photos</h3>
+            <p>Use the form below to submit clear photos of your items. Show the front, back, and any details. Include brand, size, and condition.</p>
+          </div>
+          <div style="font-size: 3rem;">📸</div>
+        </div>
+
+        <div class="card fade-in" style="display: grid; grid-template-columns: 1fr auto; gap: var(--spacing-lg); align-items: center;">
+          <div>
+            <h3 style="color: var(--accent-moss); margin-bottom: var(--spacing-md);">Step 2: Item Evaluation</h3>
+            <p>Our team reviews your submissions and evaluates quality, style, and current demand. We'll email you with our offer within 48 hours.</p>
+          </div>
+          <div style="font-size: 3rem;">✓</div>
+        </div>
+
+        <div class="card fade-in" style="display: grid; grid-template-columns: 1fr auto; gap: var(--spacing-lg); align-items: center;">
+          <div>
+            <h3 style="color: var(--accent-moss); margin-bottom: var(--spacing-md);">Step 3: Pickup or Drop-off</h3>
+            <p>Ship your items to us (we'll send you a prepaid label) or drop off at our locations. Once received and verified, payment is processed within 5 business days.</p>
+          </div>
+          <div style="font-size: 3rem;">🚚</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE ACCEPT -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What We Accept & Don't Accept</h2>
+      </div>
+
+      <div class="grid grid--2" style="max-width: 1000px; margin: 0 auto;">
+        <div class="card" style="border-color: var(--accent-moss); background: rgba(85, 107, 66, 0.05);">
+          <h3 style="color: var(--accent-moss); margin-bottom: var(--spacing-lg);">✓ We Accept</h3>
+          <ul style="list-style-position: inside; color: var(--text-secondary);">
+            <li>Designer & luxury brands</li>
+            <li>Vintage pieces (70s-90s)</li>
+            <li>High-street brands in good condition</li>
+            <li>Dresses, tops, bottoms, outerwear</li>
+            <li>Accessories (bags, belts, scarves)</li>
+            <li>Footwear in wearable condition</li>
+            <li>Seasonal pieces</li>
+            <li>Items 10+ years old (vintage)</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-color: var(--accent-terracotta); background: rgba(200, 90, 58, 0.05);">
+          <h3 style="color: var(--accent-terracotta); margin-bottom: var(--spacing-lg);">✗ We Don't Accept</h3>
+          <ul style="list-style-position: inside; color: var(--text-secondary);">
+            <li>Ripped, stained, or damaged items</li>
+            <li>Fast fashion in worn condition</li>
+            <li>Intimate apparel</li>
+            <li>Swimwear</li>
+            <li>Items needing repair</li>
+            <li>Heavy discoloration</li>
+            <li>Odorous items</li>
+            <li>Upcycled or heavily altered pieces</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSIGNMENT FORM -->
+  <section class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ready to Consign?</h2>
+        <p>Fill out the form below to get started. Upload clear photos of your items.</p>
+      </div>
+
+      <form id="consign-form" style="max-width: 700px; margin: 0 auto;">
+        <div class="form-group">
+          <label for="consign-name">Your Name</label>
+          <input type="text" id="consign-name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="consign-email">Email Address</label>
+          <input type="email" id="consign-email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="consign-phone">Phone Number</label>
+          <input type="tel" id="consign-phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="consign-items">Number of Items</label>
+          <input type="number" id="consign-items" name="items" min="1" max="50" required>
+        </div>
+
+        <div class="form-group">
+          <label>Upload Photos</label>
+          <div class="file-upload">
+            <input type="file" name="photos" multiple accept="image/*">
+            <div class="file-upload-text">📁 Click or drag photos here</div>
+            <div class="file-upload-hint">JPG, PNG up to 10MB each. Show front, back, and details.</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="consign-condition">Overall Condition of Items</label>
+          <select id="consign-condition" name="condition" required>
+            <option value="">Select condition...</option>
+            <option value="like-new">Like New - No visible wear</option>
+            <option value="excellent">Excellent - Minimal wear</option>
+            <option value="very-good">Very Good - Light wear</option>
+            <option value="good">Good - Some visible wear</option>
+            <option value="fair">Fair - Noticeable wear</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="consign-description">Item Description & Details</label>
+          <textarea id="consign-description" name="description" placeholder="List the items you're consigning. Include brands, sizes, any notable details or damage." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Shipping Method</label>
+          <div style="display: flex; gap: var(--spacing-lg); margin-top: var(--spacing-sm);">
+            <div style="display: flex; align-items: center;">
+              <input type="radio" id="ship" name="method" value="ship" checked required>
+              <label for="ship" style="margin: 0 0 0 var(--spacing-sm); cursor: pointer;">Ship to us (free label)</label>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <input type="radio" id="dropoff" name="method" value="dropoff" required>
+              <label for="dropoff" style="margin: 0 0 0 var(--spacing-sm); cursor: pointer;">Drop-off at location</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit for Review</button>
+        <p style="text-align: center; margin-top: var(--spacing-md); font-size: var(--text-xs); color: var(--text-secondary);">We'll review your items and contact you within 48 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <h3>Earn While You Declutter</h3>
+      <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: var(--spacing-xl);">Get updates on consignment rates and seasonal campaigns.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="your.email@example.com" required>
+        <button type="submit" class="btn" style="background-color: var(--accent-terracotta); color: white; border: none; white-space: nowrap;">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Thrift Better</h4>
+          <p>Curated secondhand fashion for conscious consumers.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">𝕏</a>
+            <a href="#" class="social-icon">in</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Pages</h4>
+          <a href="../index.html">Home</a>
+          <a href="learn.html">Learn About Thrifting</a>
+          <a href="curations.html">Curations</a>
+          <a href="consign.html">Consign</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">FAQs</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: hello@thriftbetter.com</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Locations: NYC, LA, Chicago</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Thrift Better. All rights reserved. Made for conscious shoppers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

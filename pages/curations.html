@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop our curated lookbook of vintage and thrifted fashion pieces. Unique secondhand items with styling tips.">
+  <meta name="keywords" content="vintage fashion, thrifted clothes, lookbook, curated pieces">
+  <title>Curations & Lookbook | Thrift Better</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../index.html" class="logo">THRIFT BETTER</a>
+        <button class="menu-toggle">☰</button>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="curations.html">Curations</a></li>
+            <li><a href="consign.html">Consign</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Curations & Lookbook</h1>
+        <p class="hero-subtext">This month's carefully selected thrifted pieces. Click any item to see it in detail.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURATIONS GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="featured-items" id="curations-container">
+        <!-- Populated by JavaScript from CMS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <h3>New Curations Weekly</h3>
+      <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: var(--spacing-xl);">Subscribe to get the latest thrifted finds before they're gone.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="your.email@example.com" required>
+        <button type="submit" class="btn" style="background-color: var(--accent-terracotta); color: white; border: none; white-space: nowrap;">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX FOR IMAGES -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close">✕</button>
+      <img id="lightbox-image" class="lightbox-image" src="" alt="">
+    </div>
+  </div>
+
+  <!-- ENQUIRY MODAL -->
+  <div class="lightbox" id="enquiry-modal">
+    <div class="lightbox-content" style="max-width: 500px;">
+      <button class="lightbox-close modal-close">✕</button>
+      <div style="padding: var(--spacing-xl);">
+        <h2 style="margin-bottom: var(--spacing-lg);">Enquire About This Piece</h2>
+        <form id="enquiry-form">
+          <div class="form-group">
+            <label>Item Name</label>
+            <input type="text" name="item" required readonly style="background-color: var(--bg-secondary); cursor: not-allowed;">
+          </div>
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell us more about your interest..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Thrift Better</h4>
+          <p>Curated secondhand fashion for conscious consumers.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">𝕏</a>
+            <a href="#" class="social-icon">in</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Pages</h4>
+          <a href="../index.html">Home</a>
+          <a href="learn.html">Learn About Thrifting</a>
+          <a href="curations.html">Curations</a>
+          <a href="consign.html">Consign</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">FAQs</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: hello@thriftbetter.com</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Locations: NYC, LA, Chicago</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Thrift Better. All rights reserved. Made for conscious shoppers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

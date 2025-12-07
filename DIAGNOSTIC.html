@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thrift Better - Diagnostic Tool</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: monospace;
+      background: #1a1a1a;
+      color: #00ff00;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #0a0a0a;
+      padding: 20px;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+    
+    h1 {
+      color: #00ff00;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+    }
+    
+    .check {
+      padding: 10px;
+      margin: 10px 0;
+      border-left: 3px solid #00ff00;
+    }
+    
+    .check.error {
+      border-left-color: #ff0000;
+      color: #ff0000;
+    }
+    
+    .check.warn {
+      border-left-color: #ffff00;
+      color: #ffff00;
+    }
+    
+    .section {
+      margin: 30px 0;
+      padding: 20px;
+      border: 1px solid #333;
+      border-radius: 4px;
+    }
+    
+    button {
+      background: #556b42;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: monospace;
+      margin: 10px 0;
+    }
+    
+    button:hover {
+      background: #c85a3a;
+    }
+    
+    code {
+      background: #1a1a1a;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔧 Thrift Better - Diagnostic Tool</h1>
+    
+    <div class="section">
+      <h2>System Checks</h2>
+      <div id="checks"></div>
+    </div>
+
+    <div class="section">
+      <h2>File Structure Check</h2>
+      <div id="files"></div>
+    </div>
+
+    <div class="section">
+      <h2>Browser Info</h2>
+      <div id="browser"></div>
+    </div>
+
+    <div class="section">
+      <h2>Actions</h2>
+      <button onclick="testPages()">Test All Pages</button>
+      <button onclick="checkResources()">Check Resources</button>
+      <button onclick="clearCache()">Clear Cache & Reload</button>
+      <div id="results"></div>
+    </div>
+
+    <div class="section">
+      <h2>Troubleshooting Guide</h2>
+      <ol style="margin-left: 20px; line-height: 2;">
+        <li>If you see a blank page: <code>Ctrl+Shift+R</code> (hard refresh)</li>
+        <li>Check browser console: <code>F12</code> → Console tab</li>
+        <li>Make sure all files are in <code>C:\Users\Anish\Desktop\Demo\</code></li>
+        <li>Required files:
+          <ul style="margin-left: 20px; margin-top: 10px;">
+            <li><code>index.html</code></li>
+            <li><code>pages/learn.html</code>, <code>pages/curations.html</code>, etc.</li>
+            <li><code>css/styles.css</code></li>
+            <li><code>js/main.js</code></li>
+            <li><code>data/curations.json</code></li>
+            <li><code>data/faqs.json</code></li>
+          </ul>
+        </li>
+        <li>Try opening <code>START_HERE.html</code> first</li>
+      </ol>
+    </div>
+  </div>
+
+  <script>
+    // System Checks
+    function runChecks() {
+      const checksDiv = document.getElementById('checks');
+      const checks = [];
+
+      // Check 1: JavaScript enabled
+      checks.push({
+        name: 'JavaScript Support',
+        status: true,
+        message: 'JavaScript is enabled ✓'
+      });
+
+      // Check 2: DOM Ready
+      checks.push({
+        name: 'Document Ready',
+        status: document.readyState === 'complete' || document.readyState === 'interactive',
+        message: `DOM State: ${document.readyState}`
+      });
+
+      // Check 3: Fetch API
+      checks.push({
+        name: 'Fetch API',
+        status: typeof fetch !== 'undefined',
+        message: 'Fetch API available for loading CMS data'
+      });
+
+      // Check 4: Local Storage
+      checks.push({
+        name: 'Local Storage',
+        status: typeof localStorage !== 'undefined',
+        message: 'Local Storage available'
+      });
+
+      // Render checks
+      checks.forEach(check => {
+        const div = document.createElement('div');
+        div.className = `check ${check.status ? '' : 'error'}`;
+        div.innerHTML = `<strong>${check.name}:</strong> ${check.message}`;
+        checksDiv.appendChild(div);
+      });
+    }
+
+    // Test Resources
+    function checkResources() {
+      const filesDiv = document.getElementById('files');
+      filesDiv.innerHTML = '';
+
+      const resources = [
+        'css/styles.css',
+        'js/main.js',
+        'data/curations.json',
+        'data/faqs.json',
+        'pages/learn.html',
+        'pages/curations.html',
+        'pages/consign.html',
+        'pages/about.html',
+        'pages/contact.html'
+      ];
+
+      resources.forEach(resource => {
+        fetch(resource, { method: 'HEAD' })
+          .then(response => {
+            const div = document.createElement('div');
+            div.className = `check ${response.ok ? '' : 'error'}`;
+            div.innerHTML = `<strong>${resource}:</strong> ${response.ok ? '✓ Found' : '✗ Not Found'}`;
+            filesDiv.appendChild(div);
+          })
+          .catch(error => {
+            const div = document.createElement('div');
+            div.className = 'check error';
+            div.innerHTML = `<strong>${resource}:</strong> ✗ Error - ${error.message}`;
+            filesDiv.appendChild(div);
+          });
+      });
+    }
+
+    // Browser Info
+    function showBrowserInfo() {
+      const browserDiv = document.getElementById('browser');
+      const info = {
+        'User Agent': navigator.userAgent.substring(0, 50) + '...',
+        'Language': navigator.language,
+        'Platform': navigator.platform,
+        'Online': navigator.onLine ? 'Yes' : 'No',
+        'Cookies Enabled': navigator.cookieEnabled ? 'Yes' : 'No'
+      };
+
+      Object.entries(info).forEach(([key, value]) => {
+        const div = document.createElement('div');
+        div.className = 'check';
+        div.innerHTML = `<strong>${key}:</strong> ${value}`;
+        browserDiv.appendChild(div);
+      });
+    }
+
+    // Test Pages
+    function testPages() {
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = '<p>Testing pages...</p>';
+
+      const pages = [
+        'index.html',
+        'pages/learn.html',
+        'pages/curations.html',
+        'pages/consign.html',
+        'pages/about.html',
+        'pages/contact.html'
+      ];
+
+      let completed = 0;
+      resultsDiv.innerHTML = '';
+
+      pages.forEach(page => {
+        fetch(page)
+          .then(response => {
+            completed++;
+            const div = document.createElement('div');
+            div.className = `check ${response.ok ? '' : 'error'}`;
+            div.innerHTML = `<strong>${page}:</strong> ${response.ok ? '✓ Accessible' : '✗ Error'}`;
+            resultsDiv.appendChild(div);
+          })
+          .catch(error => {
+            completed++;
+            const div = document.createElement('div');
+            div.className = 'check error';
+            div.innerHTML = `<strong>${page}:</strong> ✗ ${error.message}`;
+            resultsDiv.appendChild(div);
+          });
+      });
+    }
+
+    // Clear Cache
+    function clearCache() {
+      if (confirm('Clear browser cache and reload?')) {
+        // Clear service worker
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(registrations => {
+            registrations.forEach(registration => registration.unregister());
+          });
+        }
+        // Reload
+        location.reload(true);
+      }
+    }
+
+    // Initialize
+    window.addEventListener('load', () => {
+      runChecks();
+      showBrowserInfo();
+      checkResources();
+    });
+  </script>
+</body>
+</html>

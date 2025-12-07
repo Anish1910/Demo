@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thrift Better - Shop curated secondhand fashion. Sustainable, unique, affordable. Discover pre-loved pieces with character.">
+  <meta name="keywords" content="thrifting, secondhand fashion, vintage, sustainable clothing, Gen-Z fashion">
+  <meta name="theme-color" content="#556b42">
+  <title>Thrift Better - Shop Curated Secondhand Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">THRIFT BETTER</a>
+        <button class="menu-toggle">☰</button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/learn.html">Learn</a></li>
+            <li><a href="pages/curations.html">Curations</a></li>
+            <li><a href="pages/consign.html">Consign</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Thrift Better. Dress Smarter.</h1>
+        <p class="hero-subtext">Discover pre-loved fashion with character. Sustainable. Unique. Affordable.</p>
+        <div class="hero-buttons">
+          <a href="pages/curations.html" class="btn btn-primary">Explore Curations</a>
+          <a href="pages/contact.html" class="btn btn-secondary">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY THRIFTING SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Thrifting?</h2>
+        <p>Three reasons why smart shoppers are thrifting more than ever.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card fade-in">
+          <h3 style="text-align: center; font-size: 3rem; margin-bottom: var(--spacing-md);">♻️</h3>
+          <h4 style="text-align: center;">Sustainable</h4>
+          <p style="text-align: center;">Every piece you thrift keeps clothes out of landfills. It's conscious fashion without the guilt.</p>
+        </div>
+        <div class="card fade-in">
+          <h3 style="text-align: center; font-size: 3rem; margin-bottom: var(--spacing-md);">✨</h3>
+          <h4 style="text-align: center;">Unique</h4>
+          <p style="text-align: center;">No two pieces are the same. Your wardrobe becomes a personal collection, not a carbon copy.</p>
+        </div>
+        <div class="card fade-in">
+          <h3 style="text-align: center; font-size: 3rem; margin-bottom: var(--spacing-md);">💰</h3>
+          <h4 style="text-align: center;">Affordable</h4>
+          <p style="text-align: center;">Designer pieces and quality basics for a fraction of retail. Your budget stretches further.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CURATIONS SECTION -->
+  <section class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Pieces</h2>
+        <p>This month's curated selection of timeless thrift finds.</p>
+      </div>
+      <div class="featured-items" id="curations-container">
+        <!-- Populated by JavaScript -->
+      </div>
+      <div style="text-align: center; margin-top: var(--spacing-xl);">
+        <a href="pages/curations.html" class="btn btn-secondary">View Full Lookbook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Thrifting 101</h2>
+        <p>Everything you need to know about thrifting like a pro.</p>
+      </div>
+      <div style="max-width: 700px; margin: 0 auto;">
+        <div id="faq-container">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SECTION -->
+  <section class="newsletter">
+    <div class="container">
+      <h3>Stay in the Loop</h3>
+      <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: var(--spacing-xl);">Get curated picks, thrifting tips, and new releases delivered to your inbox.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="your.email@example.com" required>
+        <button type="submit" class="btn" style="background-color: var(--accent-terracotta); color: white; border: none; white-space: nowrap;">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX FOR IMAGES -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close">✕</button>
+      <img id="lightbox-image" class="lightbox-image" src="" alt="">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Thrift Better</h4>
+          <p>Curated secondhand fashion for conscious consumers.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">𝕏</a>
+            <a href="#" class="social-icon">in</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="pages/learn.html">Learn About Thrifting</a>
+          <a href="pages/curations.html">Curations</a>
+          <a href="pages/consign.html">Consign</a>
+          <a href="pages/about.html">About</a>
+          <a href="pages/contact.html">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">FAQs</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: hello@thriftbetter.com</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Locations: NYC, LA, Chicago</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Thrift Better. All rights reserved. Made for conscious shoppers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

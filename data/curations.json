@@ -1,0 +1,85 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Vintage Leather Jacket",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23d4c4b6' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23666' text-anchor='middle' dy='.3em'%3EVintage Leather Jacket%3C/text%3E%3C/svg%3E",
+      "story": "Buttery soft leather from the 90s. Perfectly aged with character. Pairs with everything.",
+      "condition": "Excellent",
+      "style": "Timeless",
+      "price": "$45"
+    },
+    {
+      "id": 2,
+      "name": "Floral Midi Dress",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23e8dcd3' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23666' text-anchor='middle' dy='.3em'%3EFloral Midi Dress%3C/text%3E%3C/svg%3E",
+      "story": "Spring vibes in a 70s-inspired print. Lightweight linen. Perfect for picnics.",
+      "condition": "Like New",
+      "style": "Romantic",
+      "price": "$32"
+    },
+    {
+      "id": 3,
+      "name": "Wide Leg Trousers",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23d0c7bd' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23666' text-anchor='middle' dy='.3em'%3EWide Leg Trousers%3C/text%3E%3C/svg%3E",
+      "story": "High-waisted, chic, and oh-so-comfortable. Pleated front detail. True 80s glamour.",
+      "condition": "Very Good",
+      "style": "Minimalist",
+      "price": "$28"
+    },
+    {
+      "id": 4,
+      "name": "Oversized Denim Shirt",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23c5b5a8' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23666' text-anchor='middle' dy='.3em'%3EOversized Denim Shirt%3C/text%3E%3C/svg%3E",
+      "story": "The ultimate thrift find. Perfect faded blue. Wear it oversized or tucked.",
+      "condition": "Good",
+      "style": "Casual",
+      "price": "$24"
+    },
+    {
+      "id": 5,
+      "name": "Silk Slip Dress",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23e5d5ca' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23666' text-anchor='middle' dy='.3em'%3ESilk Slip Dress%3C/text%3E%3C/svg%3E",
+      "story": "Champagne silk in a delicate bias cut. Effortlessly elegant. Layer it or wear alone.",
+      "condition": "Excellent",
+      "style": "Chic",
+      "price": "$38"
+    },
+    {
+      "id": 6,
+      "name": "Vintage Band Tee",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23bfb1a5' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23666' text-anchor='middle' dy='.3em'%3EVintage Band Tee%3C/text%3E%3C/svg%3E",
+      "story": "Rare 90s concert tee. Authentic vintage vibes. Soft, worn-in feel.",
+      "condition": "Good",
+      "style": "Edgy",
+      "price": "$52"
+    },
+    {
+      "id": 7,
+      "name": "Cream Wool Cardigan",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23e8dcd3' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23666' text-anchor='middle' dy='.3em'%3ECream Wool Cardigan%3C/text%3E%3C/svg%3E",
+      "story": "Soft merino blend. Perfect over everything. Cozy luxury on a budget.",
+      "condition": "Like New",
+      "style": "Timeless",
+      "price": "$35"
+    },
+    {
+      "id": 8,
+      "name": "Patterned Scarf",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23d9c9bc' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23666' text-anchor='middle' dy='.3em'%3EPatterned Scarf%3C/text%3E%3C/svg%3E",
+      "story": "Silk and wool blend. Geometric print. Elevates any outfit instantly.",
+      "condition": "Excellent",
+      "style": "Eclectic",
+      "price": "$18"
+    },
+    {
+      "id": 9,
+      "name": "Brown Suede Boots",
+      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23c9b5a0' width='300' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23666' text-anchor='middle' dy='.3em'%3EBrown Suede Boots%3C/text%3E%3C/svg%3E",
+      "story": "Soft suede in warm brown. Stacked heel. Winter ready and totally versatile.",
+      "condition": "Very Good",
+      "style": "Timeless",
+      "price": "$42"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thrift Better - Test</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+      background-color: #faf8f5;
+      color: #1a1a1a;
+      padding: 40px 20px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    header {
+      background: white;
+      padding: 20px 0;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #e0dbd5;
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #556b42;
+      text-decoration: none;
+      letter-spacing: 2px;
+    }
+    
+    h1 {
+      font-size: 3.75rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+    }
+    
+    p {
+      text-align: center;
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+    
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #e0dbd5;
+      text-align: center;
+    }
+    
+    .card h3 {
+      color: #556b42;
+      margin-bottom: 15px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #556b42;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    
+    .btn:hover {
+      background: #c85a3a;
+    }
+    
+    .status {
+      background: #556b42;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 30px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">THRIFT BETTER</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>✓ Thrift Better Website</h1>
+    <p>Your Gen-Z thrifting platform is ready!</p>
+    
+    <div class="status">
+      <strong>✓ All systems operational</strong>
+      <p style="margin-top: 10px; font-size: 1rem;">The website is displaying correctly</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🏠 Home</h3>
+        <p>Hero, benefits, featured items, FAQs, newsletter</p>
+        <a href="index.html" class="btn">View Home</a>
+      </div>
+
+      <div class="card">
+        <h3>📚 Learn</h3>
+        <p>Everything about thrifting for Gen-Z</p>
+        <a href="pages/learn.html" class="btn">View Learn</a>
+      </div>
+
+      <div class="card">
+        <h3>✨ Curations</h3>
+        <p>Curated lookbook with lightbox</p>
+        <a href="pages/curations.html" class="btn">View Curations</a>
+      </div>
+
+      <div class="card">
+        <h3>💰 Consign</h3>
+        <p>Sell your clothes with us</p>
+        <a href="pages/consign.html" class="btn">View Consign</a>
+      </div>
+
+      <div class="card">
+        <h3>ℹ️ About</h3>
+        <p>Our story, mission, and team</p>
+        <a href="pages/about.html" class="btn">View About</a>
+      </div>
+
+      <div class="card">
+        <h3>📞 Contact</h3>
+        <p>Get in touch with us</p>
+        <a href="pages/contact.html" class="btn">View Contact</a>
+      </div>
+    </div>
+
+    <div style="background: white; padding: 30px; border-radius: 12px; margin-top: 40px; border: 1px solid #e0dbd5;">
+      <h2 style="color: #556b42; margin-bottom: 20px;">🚀 Quick Troubleshooting</h2>
+      <ul style="margin-left: 20px; line-height: 1.8; color: #666;">
+        <li><strong>Blank page?</strong> Try refreshing (Ctrl+R or Cmd+R)</li>
+        <li><strong>Styling not loading?</strong> Make sure css/styles.css exists</li>
+        <li><strong>Navigation broken?</strong> Check that pages/ folder has all HTML files</li>
+        <li><strong>Still issues?</strong> Check browser console (F12 → Console tab)</li>
+      </ul>
+    </div>
+
+    <div style="background: #f5f3f0; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center;">
+      <p style="margin: 0; color: #666; font-size: 0.95rem;">
+        <strong>Need help?</strong> Open README.md in the project folder for complete documentation
+      </p>
+    </div>
+  </div>
+</body>
+</html>
